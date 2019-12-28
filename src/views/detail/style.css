@@ -1,0 +1,38 @@
+
+.header-artikel{
+    padding:20px 70px;
+}
+.wrapped-artikel{
+    padding:0px 200px
+}
+.content-artikel{
+    font-family:Proxima;
+    font-size: 20px;
+    padding:0px 200px
+
+}
+img{
+    width:100%;
+}
+.read-also {
+    margin: 50px auto;
+    float: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    padding: 1rem;
+    border: .1rem solid #ccc;
+    border-radius: .3rem;
+    box-shadow: 0 5px 0 0 rgba(0,0,0,.03);
+}
+.multiapp-wrapper {
+    padding: .5em;
+    border: 2px solid #f5f5f5;
+    border-radius: 5px;
+}
+.multiapp-wrapper .multiapp-image img {
+    width: 150px;
+    max-height: 150px;
+    border-radius: 20px;
+}
