@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import './style.css'
 import Navbar from '../../component/navbar/navbar'
-import {Row,Col} from 'reactstrap'
+import {Row,Col,Button} from 'reactstrap'
 import {connect} from 'react-redux'
 import {getArticles} from '../../redux/actions/artikel'
 import Loading from '../../component/loading/loader'
 import { Markup } from 'interweave';
 import BottomScrollListener from 'react-bottom-scroll-listener';
+import ScrollToTop from 'react-scroll-up'
 class homepage extends Component {
     componentDidMount(){
         this.props.getArticles()
@@ -26,6 +27,9 @@ class homepage extends Component {
                 
                 <Navbar/>
                 <br/><br/><br/>
+                <ScrollToTop showUnder={160}>
+                    <Button style={{position:'fixed',bottom:10,right:20}}>to Top</Button>
+                </ScrollToTop>
                 <div className='container' >
                     <div className='headline'>
                     {articles_headline==null?<Loading/>:
